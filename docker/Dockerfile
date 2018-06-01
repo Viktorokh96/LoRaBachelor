@@ -5,6 +5,7 @@ RUN apt-get update \
                                     git \
                                     inkscape dia graphviz perl ghostscript \
                                     python-pygments \
+                                    python3-pygments \
                                     imagemagick \
                                     texlive-latex-base texlive-lang-cyrillic \
                                     texlive-xetex texlive-latex-extra \
