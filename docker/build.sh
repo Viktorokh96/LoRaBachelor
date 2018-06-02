@@ -47,8 +47,8 @@ build() {
 mkdir "$RESDIR"
 chmod a=rwx "$RESDIR"
 
-for buildsystem in make cmake ; do
-    for latex in pdflatex xelatex ; do
+for buildsystem in cmake ; do
+    for latex in xelatex ; do
         build ${buildsystem} ${latex}
     done
 done
