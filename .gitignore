@@ -1,4 +1,6 @@
 auto
+*.swp
+*.swo
 *.aux
 *.glo
 *.idx
