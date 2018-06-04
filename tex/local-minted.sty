@@ -5,14 +5,16 @@
 \usepackage{minted}
 
 % Сюда вставлять общие опции
-\def\mintedoptions{linenos,frame=single,fontsize=\footnotesize,style=bw,fontfamily=cyrillicfontttnoftr}
+\def\mintedoptions{linenos,breaklines,frame=single,fontsize=\footnotesize,style=bw,fontfamily=cyrillicfontttnoftr}
 
 % Сюда пихать новые языки
 \newcommand{\makenewmintedenviromnents}[1]{%
   \newminted{c}{#1}%
+  \newminted{cmake}{#1}%
   \newminted{ebnf}{#1}%
   \newminted{python}{#1}%
   \newmintedfile{c}{#1}%
+  \newmintedfile{cmake}{#1}%
   \newmintedfile{ebnf}{#1}%
   \newmintedfile{python}{#1}%
 }

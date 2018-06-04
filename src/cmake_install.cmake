@@ -1,4 +1,4 @@
-# Install script for directory: /home/viktor96/Programs/ARMEmbedded/LoRaMac-node/src
+# Install script for directory: /home/viktor96/Programs/ARMEmbedded/LoRaMac-node
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,13 +34,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/viktor96/Programs/ARMEmbedded/LoRaMac-node/src/boards/STM32L476/cmake_install.cmake")
-  include("/home/viktor96/Programs/ARMEmbedded/LoRaMac-node/src/boards/cmake_install.cmake")
-  include("/home/viktor96/Programs/ARMEmbedded/LoRaMac-node/src/radio/cmake_install.cmake")
-  include("/home/viktor96/Programs/ARMEmbedded/LoRaMac-node/src/system/cmake_install.cmake")
-  include("/home/viktor96/Programs/ARMEmbedded/LoRaMac-node/src/mac/cmake_install.cmake")
-  include("/home/viktor96/Programs/ARMEmbedded/LoRaMac-node/src/peripherals/cmake_install.cmake")
-  include("/home/viktor96/Programs/ARMEmbedded/LoRaMac-node/src/apps/ping-pong/cmake_install.cmake")
+  include("/home/viktor96/Programs/ARMEmbedded/LoRaMac-node/src/cmake_install.cmake")
 
 endif()
 
+if(CMAKE_INSTALL_COMPONENT)
+  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
+else()
+  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
+endif()
+
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+file(WRITE "/home/viktor96/Programs/ARMEmbedded/LoRaMac-node/${CMAKE_INSTALL_MANIFEST}"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
