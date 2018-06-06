@@ -1,11 +1,17 @@
-\chapter{Картинки}
 \label{cha:appendix1}
+\chapter{Листинги программ}
 
-\blindtext
-\begin{figure}
-\centering
-\caption{Картинка в приложении. Страшная и ужасная.}
-\end{figure}
+\cfile{inc/src/main.c}
+\captionof{listing}{Главная программа приложения Ping-Pong}
+
+\cfile{inc/src/logging.h}
+\captionof{listing}{Интерфейс модуля logging}
+
+\cfile{inc/src/logging.c}
+\captionof{listing}{Реализация модуля logging}
+% firstline, lastline - какие строки показывать 
+%\textfile[firstline=27]{inc/src/LinkerScript.ld}
+%\captionof{listing}{Инструкции для компоновщика \label{lst:linker}}
 
 %%% Local Variables: 
 %%% mode: latex
