@@ -32,7 +32,7 @@
 \begin{figure}[!h]
   \centering
   \includegraphics[width=\textwidth]{inc/img/exp1}
-  \caption{Автономное устройство передающее кадры с Ping в приложении Ping-Pong}
+  \caption{Автономное устройство, передающее кадры Ping в приложении Ping-Pong}
   \label{fig:exp1}
 \end{figure}
 
@@ -45,7 +45,8 @@
 \hline
 \begin{tabular}[c]{@{}l@{}}Описание \\ места\end{tabular}                        
                 & \begin{tabular}[c]{@{}c@{}}Расстояние \\ до БС, м\end{tabular} 
-& PER, \%      & RSSI                                                  \\ \hline
+& PER, \%      & RSSI, дБм                                                  \\ 
+\hline
 \begin{tabular}[c]{@{}l@{}}За домом.\\ Несколько стен.\end{tabular}              
                 & 40                                                             
 & 0,8 & -94                                                   \\ \hline
@@ -71,10 +72,11 @@
 Используемые параметры физического уровня: модуляция LoRa, SF = 7, BW = 125 
 кГц, несущая частота равна 433 МГц, CR = 4/5, длина преамбулы равна 8, усиление 
 передатчика - 14 дБ.
+Использовалась антенна с усилением 4 дБ.
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[height=\textheight]{inc/img/LoRaMeas}
+  \includegraphics[height=0.9\textheight]{inc/img/LoRaMeas}
   \caption{Результаты замеров качества приёма пакетов}
   \label{fig:measmap}
 \end{figure}
