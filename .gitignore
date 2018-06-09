@@ -1,4 +1,5 @@
 auto
+*.backup
 *.swp
 *.swo
 *.aux
